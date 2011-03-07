@@ -20,6 +20,8 @@ sub notifier_enhanced_growl {
 You can configure notifications for TTYtter Growl enhanced in the Growl preference pane.';
 		}
 	}
+	
+$text =~ s/"/\\"/g;
 
 $applescript = <<HEREDOC
 tell application "GrowlHelperApp"
